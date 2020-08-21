@@ -1,0 +1,48 @@
+Introduction/Business Problem
+
+My first job was working at a pizza place, spinning dough, laying down
+toppings and packing fresh baked pizza into boxes to feed the hungry.
+It’s a noble profession, and a repressed dream of mine to own and run
+a successful pizza shop. If you’re looking for good pizza in Miami,
+not the $5 oily cardboard kind, your options are few and far between.
+I must always hope there are similar-minded pizza enthusiasts.
+
+Over half of all restaurants fail in their first year, and poor
+location choice is cited as the primary reason. This begs the
+question? What is a good location for a pizza place? 
+
+A solid approach to answering this question would involve profiling a
+number of popular, long running pizza shops as models, charting up
+data points on their area’s location, demographic, and behavioral
+data, and fitting a decision tree to understand why and grade
+potential locations.
+
+That would involve a lot of data I don’t have, and for the purposes of
+this project, i’m limiting myself to what data i can gleam off free
+acces to the the foursquare API.
+
+I will be going with my gut on this one. I will set my own criteria,
+and build a recommender system to suggest the best neighborhoods. My
+gut says:
+
+There should be a lot of people in this neighborhood There should be a
+high restaurant to population ratio There should be a relatively low
+pizza place to restaurant ratio
+
+My API access limits me to 50 results per query. I will be using these
+50 results as a sample for each neighborhood, and basing my ratios off
+the samples.
+
+Data
+
+Wikipedia Miami-Dade neighborhoods
+https://en.wikipedia.org/wiki/List_of_communities_in_Miami-Dade_County,_Florida
+This is a well segmented list of neigbhorhoods in Miami along with
+their populations. Each neighbohood links to a page sharing the
+population density.
+
+Foursquare API Will provide lists of venues and their respective
+categories for each neighborhood. I will use the data to calculate the
+criteria ratios of  restaurants to population density pizza
+restuarants to restaurants
+
